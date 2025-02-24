@@ -5,6 +5,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    outline: 2px solid red;
 }
 
 
@@ -13,6 +14,7 @@ html, body {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(./Images/Background.jpg);
+    
     
 }
 
@@ -142,7 +144,10 @@ nav a:hover {
 }
 
 
+
 .main-grid {
+    width: 100%;
+    max-width: 100%;
     flex-grow: 1;  /* Allow the content to fill up available space */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -177,24 +182,28 @@ h3 {
 
 
 #Introduction {
-    grid-column: 1 / 9;
+    grid-column: 1 / 12;
     grid-row: 1;
     margin-top: 0;
 }
 
+
 figure {
-    grid-column: 1 / 9;
+    grid-column: 1 / 12;
     grid-row: 2;
-    height: 150px;
-    width: 100VW;
-    
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
+
 figure img {
-    max-height: 100%;
-    width: auto;
+    width: 100%;   
+    height: auto;
     border: 3px solid #2a8ced;
 }
+
 
 
 figcaption {
@@ -204,7 +213,7 @@ figcaption {
    
 
 #Mission_Statement {
-    grid-column: 1 / 9;
+    grid-column: 1 / 12;
     grid-row: 3;
     text-align: center;
     margin-top: 3%;
@@ -212,7 +221,7 @@ figcaption {
 
 #Slideshow_Container {
     position: relative;
-    grid-column: 1 / 10;
+    grid-column: 1 / 12;
     height: auto;
     width: 100%;
 }
