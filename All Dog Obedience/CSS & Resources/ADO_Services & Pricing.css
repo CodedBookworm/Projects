@@ -1,0 +1,347 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Styling */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./Images/Background.jpg);
+}
+
+/* Header Grid */
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Adjusts for logo and nav */
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #2a8ced;
+    min-height: 150px;
+}
+
+/* Logo Styling */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px; /* Ensures logo doesn't get too big */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    color: #2a8ced;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, #87CEEB 20%, #FFFDD0 80%);
+    opacity: 0.8;
+}
+
+/* ======= RESPONSIVE DESIGN ======= */
+
+/* Small Screens: Phones in Portrait (Up to 480px) */
+@media (max-width: 480px) {
+    .header-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo img {
+        max-height: 80px; /* Reduces logo size for smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 90%;
+        padding: 0.8rem;
+    }
+}
+
+/* Medium Screens: Phones in Landscape & Small Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .header-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .logo img {
+        max-height: 100px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Large Tablets & Small Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-grid {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .logo img {
+        max-height: 110px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 0.9rem 1.4rem;
+    }
+}
+
+/* Large Screens: Desktops (1025px and above) */
+@media (min-width: 1025px) {
+    .header-grid {
+        grid-template-columns: 1fr 4fr;
+        padding: 10px 10%;
+    }
+
+    .logo img {
+        max-height: 120px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+}
+
+
+main {
+    margin-top: 3%;
+}
+
+h1 {
+    padding: 10px 10px;
+    line-height: 1.7em;
+    color: #2a8ced;
+    text-decoration-line: underline;
+}
+
+#Table_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 15rem;
+
+}
+
+
+table, th, td {
+    color: #2a8ced;
+}
+
+th {
+    display: table-cell;
+    font-weight: bolder;
+    text-align: center;
+    unicode-bidi: isolate;
+    color: #f5f5f5;
+    background-color: #2a8ced;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: separate;
+    text-indent: inherit;
+    text-align: start;
+    border-spacing: 1px;
+    white-space: normal;
+    width: 80%;
+    border: 1px solid #2a8ced;
+    
+}
+
+tbody {
+    background-color: #f5f5f5;
+}
+
+td {
+    display: table-cell;
+    unicode-bidi: isolate;
+}
+
+footer {
+    width: 100%;
+    background-color: #2a8ced;
+    color: #f5f5f5;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+#Contact_Us {
+    color: #f5f5f5;
+    flex: 1;
+    padding: 5rem;
+}
+
+#Contact_Us h4 {
+    padding: 0.5rem;
+}
+
+.fb-page {
+    color: #800080;
+}
+
+.facility-info {
+    color: #f5f5f5;
+    text-decoration: underline;
+    flex: 1;
+    padding: 5rem;
+}
+
+.facility-info p {
+    padding: 0.5rem;
+}
+
+#location {
+    color: #f5f5f5;
+    flex: 1;
+    padding: 5rem;
+}
+
+
+
+/* Small Screens: Phones in Portrait (Up to 480px) */
+@media (max-width: 480px) {
+
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #Contact_Us, .facility-info, #location {
+        flex: 1;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    #Contact_Us h4, .facility-info p, #location {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium Screens: Phones in Landscape & Small Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+
+
+    footer {
+        padding: 1rem 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #Contact_Us, .facility-info, #location {
+        padding: 3rem;
+        text-align: center;
+    }
+
+    #Contact_Us h4, .facility-info p, #location {
+        font-size: 1rem;
+    }
+}
+
+/* Large Tablets & Small Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    footer {
+        padding: 1rem 3rem;
+        flex-direction: row;
+    }
+
+    .footer-container {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #Contact_Us, .facility-info, #location {
+        padding: 3rem;
+        text-align: left;
+    }
+
+    #Contact_Us h4, .facility-info p, #location {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Screens: Desktops (1025px and above) */
+@media (min-width: 1025px) {
+    
+
+    footer {
+        padding: 1rem 5%;
+        flex-direction: row;
+    }
+
+    .footer-container {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #Contact_Us, .facility-info, #location {
+        padding: 5rem;
+    }
+
+    #Contact_Us h4, .facility-info p, #location {
+        font-size: 1.2rem;
+    }
+}
+
+
