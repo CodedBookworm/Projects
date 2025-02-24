@@ -144,6 +144,7 @@ main {
 h2 {
     text-decoration: underline;
     color: #2a8ced;
+    padding-bottom: 1rem;
 }
 
 figure {
