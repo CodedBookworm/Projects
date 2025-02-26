@@ -57,7 +57,32 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* ======= RESPONSIVE DESIGN ======= */
+/* =======Media Queries======= */
+
+/* Phones in Portrait (Up to 320px) */
+@media (max-width: 320px) {
+    .header-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 5px 3%;
+    }
+
+    .logo img {
+        max-height: 70px; /* Further reducing the logo size */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 90%;
+        padding: 0.7rem;
+        font-size: 0.9rem; /* Smaller font size for tighter screens */
+    }
+}
+
 
 /* Small Screens: Phones in Portrait (Up to 480px) */
 @media (max-width: 480px) {
@@ -215,9 +240,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    
-    
+    position: relative;  
 }
 
 
@@ -258,7 +281,6 @@ footer {
     flex: 1;
     padding: 5rem;
 }
-
 
 
 /* Small Screens: Phones in Portrait (Up to 480px) */
@@ -358,3 +380,4 @@ footer {
         font-size: 1.2rem;
     }
 }
+

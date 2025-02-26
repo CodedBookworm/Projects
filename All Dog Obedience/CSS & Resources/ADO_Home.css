@@ -60,7 +60,7 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* ======= RESPONSIVE DESIGN ======= */
+/* ======= Media Queries ======= */
 
 /* Phones in Portrait (Up to 320px) */
 @media (max-width: 320px) {
@@ -86,31 +86,7 @@ nav a:hover {
     }
 }
 
-/* Phones in Portrait (Up to 375px) */
-@media (max-width: 375px) {
-    .header-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 8px 4%;
-    }
-
-    .logo img {
-        max-height: 80px; /* Adjusting logo size */
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        width: 90%;
-        padding: 0.8rem;
-        font-size: 1rem; /* Adjusting font size for better readability */
-    }
-}
     
-
 /* Small Screens: Phones in Portrait (Up to 480px) */
 @media (max-width: 480px) {
     .header-grid {
@@ -352,18 +328,12 @@ footer {
 
 /* Phones in Portrait (Up to 320px) */
 @media (max-width: 320px) {
-    .reviews-sect {
-        color: #2a8ced;
-        text-align: center;
-    }
-
-
+    
     .slide img {
         margin-top: 1rem;
     }
 
     
-
 footer {
     margin-top: 30%;
     padding: 1rem;
@@ -388,55 +358,15 @@ footer {
 }
 }
 
-
-/* Phones in Portrait (Up to 375px) */
-@media (max-width: 375px) {
-    .reviews-sect {
-        color: #2a8ced;
-        text-align: center;
-    }
-
-    .slide img {
-        margin-top: 1.5rem; /* Increased space between the images */
-    }
-
-
-    footer {
-        margin-top: 35%;
-        padding: 1.5rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    #Contact_Us, .facility-info, #location {
-        flex: 1;
-        padding: 2rem;
-        text-align: center;
-    }
-
-    #Contact_Us h4, .facility-info p, #location {
-        font-size: 1rem;
-    }
-}
 /* Small Screens: Phones in Portrait (Up to 480px) */
 @media (max-width: 480px) {
-    .reviews-sect {
-        color: #2a8ced;
-        text-align: center; 
-    }
 
     .slide img {
         margin-top: 2rem; /* Increased space between the images */
     }
 
     footer {
-        margin-top: 45%;
+        margin-top: 40%;
         flex-direction: column;
         padding: 1rem;
         align-items: center;
@@ -461,14 +391,8 @@ footer {
 
 /* Medium Screens: Phones in Landscape & Small Tablets (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
-    .reviews-sect {
-        color: #2a8ced;
-        text-align: center;
-        margin-bottom: 4rem; /* Increased margin for more space */
-    }
-
-    .slide {
-        margin-top: 4%; /* Increased space between the images */
+    .slide img {
+        margin-top: 2.5rem;
     }
 
     footer {
@@ -496,14 +420,8 @@ footer {
 
 /* Large Tablets & Small Laptops (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .reviews-sect {
-        color: #2a8ced;
-        text-align: center;
-        margin-bottom: 4rem; /* Increased margin for more space */
-    }
-
-    .slide {
-        margin-top: 4%; /* Increased space between the images */
+    .slide img {
+        margin-top: 3rem;
     }
 
     footer {
@@ -529,14 +447,8 @@ footer {
 
 /* Large Screens: Desktops (1025px and above) */
 @media (min-width: 1025px) {
-    .reviews-sect {
-        color: #2a8ced;
-        text-align: center;
-        margin-bottom: 4rem; /* Increased margin for more space */
-    }
-
     .slide img {
-        margin-top: 4%; /* Increased space between the images */
+        margin-top: 3rem;
     }
 
     footer {

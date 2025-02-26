@@ -15,7 +15,7 @@ function nextSlide() {
     showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 3000);  // this will automatically move to the next slide every 3 seconds
+setInterval(nextSlide, 5000);  // this will automatically move to the next slide every 5 seconds
 
 showSlide(currentSlide);  // show the initial slide
 
