@@ -219,12 +219,17 @@ td {
 }
 
 
-/* ======= Media Query for better table readability. =======*/
-@media (max-width: 320px){
+/* ======= Media Queries for better table readability. =======*/
+@media (max-width: 320px) {
     th, td {
         font-size: 12px;
     }
-    
+}
+
+@media (max-width: 480px) {
+    th, td {
+        font-size: 14px;
+    }
 }
 
 footer {
