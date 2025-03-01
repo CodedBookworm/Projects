@@ -60,7 +60,7 @@ nav a:hover {
 /* =======Media Queries======= */
 
  /* Phones in Portrait (Up to 320px) */
-@media (max-width: 320px) {
+ @media (max-width: 320px) {
     .header-grid {
         grid-template-columns: 1fr;
         text-align: center;

@@ -1,8 +1,11 @@
 * {
     box-sizing: border-box;
+    
 }
 
-
+html, body {
+    width: 100%;
+}
 
 body {
     font-family: Helvetica;
@@ -21,7 +24,7 @@ header {
     justify-content: space-around;
     margin-top: -10px;
     width: 100%;
-    height: 69px;
+    height: 79px;
     border: 1px solid #FF4040;
 }
 
@@ -183,15 +186,17 @@ footer {
 
 /*======= Media Queries =======*/
 
-@media screen and (max-width: 320px) {
+/* Small screens (max-width: 320px) */
+@media (max-width: 320px) {
     body {
-        font-size: 14px;
+        font-size: 12px; 
     }
 
     header {
         flex-direction: column;
         align-items: center;
         padding: 5px 0;
+        height: auto;
     }
 
     #FeatureTags a {
@@ -200,21 +205,16 @@ footer {
     }
 
     #MissionImage {
-        height: 350px;
-    }
-
-    .headingflexboxes h2, .headingflexboxes h4 {
-        font-size: 18px;
-    }
-
-    #TeaImagesContainer {
-        flex-direction: column;
-        width: 100%;
+        height: 500px; 
     }
 
     .products img {
-        width: 70%;
-        margin-bottom: 10px;
+        width: 100%; 
+    }
+
+    #TeaImagesContainer {
+        flex-direction: column; 
+        width: 100%; 
     }
 
     #Locations {
@@ -233,66 +233,59 @@ footer {
         width: 90%;
         margin-bottom: 15px;
     }
-
-    footer {
-        min-height: 130px;
-        padding: 10px 0;
-    }
-
-    #CompanyFooterInfo {
-        flex-direction: column;
-        padding: 5px 0;
-    }
-
-    .company-info {
-        font-size: 14px;
-        padding: 4px;
-    }
-
-    .company-info-copyright {
-        font-size: 10px;
-        text-align: center;
-        margin-top: -5px;
-    }
 }
-        
+
+footer {
+    min-height: 130px;
+    padding: 10px 0;
+}
+
+#CompanyFooterInfo {
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.company-info {
+    font-size: 14px;
+    padding: 4px;
+}
+
+.company-info-copyright {
+    font-size: 10px;
+    text-align: center;
+    margin-top: -5px;
+}
 
 
-/* Mobile - Small Screens (320px to 480px) */
-@media screen and (max-width: 480px) {
+/* Medium screens (max-width: 480px) */
+@media (max-width: 480px) {
     body {
-        font-size: 18px;
+        font-size: 16px; /* Adjust font size for medium screens */
     }
-    
+
     header {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding: 10px 0;
+        padding: 5px 0;
+        height: auto;
     }
-    
+
     #FeatureTags a {
         font-size: 14px;
-        margin: 5px 0;
+        margin: 10px 0;
     }
-    
+
     #MissionImage {
-        height: 400px;
-    }
-
-    .headingflexboxes h2, .headingflexboxes h4 {
-        font-size: 20px;
-        padding: 10px;
-    }
-
-    #TeaImagesContainer {
-        flex-direction: column;
-        width: 100%;
+        height: 500px; /* Match the 320px height */
     }
 
     .products img {
-        width: 80%;
-        margin-bottom: 10px;
+        width: 90%; /* Adjust product image size */
+    }
+
+    #TeaImagesContainer {
+        flex-direction: column; /* Stack product images vertically */
+        width: 100%; /* Ensure container fits within screen */
     }
 
     #Locations {
@@ -300,16 +293,13 @@ footer {
         flex-wrap: wrap;
         height: auto;
         padding: 20px;
-        
     }
 
     .location-heading {
         font-size: 28px;
         left: 30%;
         margin-top: -5px;
-        
     }
-
 
     .black-card-info {
         font-size: 16px;
@@ -318,48 +308,48 @@ footer {
     }
 
     footer {
-        min-height: 150px; 
+        min-height: 130px;
         padding: 10px 0;
     }
-
+    
     #CompanyFooterInfo {
         flex-direction: column;
-        padding: 10px 0;
+        padding: 5px 0;
     }
-
+    
     .company-info {
-        font-size: 16px; 
-        padding: 5px;
-        margin-bottom: 5px;
+        font-size: 14px;
+        padding: 4px;
     }
-
+    
     .company-info-copyright {
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
         margin-top: -5px;
     }
 }
 
 
-/* Tablet - Medium Screens (481px to 768px) */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
+/* Large screens (min-width: 481px and max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 22px; /* Adjust font size for larger medium screens */
     }
 
-    #FeatureTags {
-        font-size: 16px;
+    #FeatureTags a {
+        font-size: 18px; /* Increase font size for navigation */
+    }
+
+    #MissionImage {
+        height: 650px; /* Adjust height of mission image */
     }
 
     #TeaImagesContainer {
-        width: 90%;
-        gap: 15px;
+        width: 90%; /* Make sure the container fits the screen */
     }
 
     .products img {
-        width: 45%;
+        width: 250px; /* Adjust product image size */
     }
 
     #Locations {
@@ -380,50 +370,53 @@ footer {
     }
 }
 
-footer {
-    min-height: 150px; 
-    padding: 10px 0;
-}
+/* Extra large screens (min-width: 769px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 24px; /* Adjust font size for large screens */
+    }
 
-#CompanyFooterInfo {
-    flex-direction: column;
-    padding: 10px 0;
-}
+    #FeatureTags a {
+        font-size: 20px; /* Adjust font size for navigation */
+    }
 
-.company-info {
-    font-size: 16px; 
-    padding: 5px;
-    margin-bottom: 5px;
-}
-
-.company-info-copyright {
-    font-size: 12px;
-}
-
-
-/* Desktop - Large Screens (769px and above) */
-@media screen and (min-width: 769px) {
-    #TeaImagesContainer {
-        width: 1000px;
-        gap: 20px;
+    #MissionImage {
+        height: 700px; /* Keep the mission image height consistent */
     }
 
     .products img {
-        width: 300px;
-    }
-
-    #Locations {
-        flex-direction: row;
-        height: 500px;
-        padding: 20px;
-    }
-
-    .location-heading {
-        font-size: 35px;
+        width: 250px; /* Adjust product image size */
     }
 
     .black-card-info {
-        width: 300px;
+        width: 35%; /* Adjust location card size */
+    }
+}
+
+/* Extra large screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 22px; /* Default font size for larger screens */
+    }
+
+    #FeatureTags a {
+        font-size: 22px; /* Adjust font size for navigation */
+    }
+
+    #MissionImage {
+        height: 700px; /* Keep the mission image height consistent */
+    }
+
+    #TeaImagesContainer {
+        width: 1000px; /* Keep the product container width fixed */
+    }
+
+    .products img {
+        width: 300px; /* Product image size for larger screens */
+    }
+
+    .black-card-info {
+        width: 300px; 
     }
 }
 
