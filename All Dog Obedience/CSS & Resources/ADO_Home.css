@@ -7,11 +7,16 @@
 
 
 html, body {
-    width: 100%;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./Images/Background.jpg); 
+    background-image: url(./Images/Background.jpg);
+    font-family: 'Arial',sans-serif; 
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 
 /* Header Grid */
 .header-grid {
@@ -164,9 +169,9 @@ nav a:hover {
 
 
 .main-grid {
+    flex: 1;
     width: 100%;
     max-width: 100%;
-    flex-grow: 1;  /* Allow the content to fill up available space */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;  /* Let rows be flexible */
